@@ -58,7 +58,7 @@ namespace ApiProvaWeb.Controllers
         {
             
             if (id != model.Id)
-                return NotFound(new { message = "Funcionario não encontrado" });
+                return NotFound(new { message = "id Funcionario não encontrado" });
 
             
             if (!ModelState.IsValid)
