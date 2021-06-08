@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ApiProvaWeb.Models
@@ -20,7 +22,7 @@ namespace ApiProvaWeb.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Este campo é obrigatório")]
-        public decimal Matricula { get; set; }
+        public int Matricula { get; set; }
 
         public DateTime DataDeCadastro  { get; set; }
         
